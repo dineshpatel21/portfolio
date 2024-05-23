@@ -1,0 +1,9 @@
+[
+    {"title":"HTML","src":"../../assets/experience/html.png"},
+    {"title":"CSS","src":"../../assets/experience/css.png"},
+    {"title":"JS","src":"../../assets/experience/html.png"},
+    {"title":"GraphQL","src":"../../assets/experience/graphQL.png"},
+    {"title":"MongoDB","src":"../../assets/experience/mongodb.png"},
+    {"title":"Node","src":"../../assets/experience/node.png"},
+    {"title":"REACT JS","src":"../../assets/experience/reactjs.png"}
+]

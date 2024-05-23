@@ -1,0 +1,18 @@
+[
+  {
+    "role": "React Native Developer",
+    "organisation": "Sampark Infoways",
+    "startDate": "28-05-2023",
+    "endDate": "30-04-2024",
+    "experiences": ["React Native","Android","Kotlin"],
+    "ImageSrc": ""
+  },
+  {
+    "role": "React Native Developer",
+    "organisation": "EarnWealth Solutions",
+    "startDate": "19-12-2022",
+    "endDate": "10-04-2023",
+    "experiences": ["React Native","Android","Kotlin"],
+    "ImageSrc": ""
+  }
+]
