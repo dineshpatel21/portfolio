@@ -4,11 +4,12 @@ import about from "../../assets/about/arrow.png";
 import react from "../../assets/about/react.png";
 import ui from "../../assets/about/ui.png";
 import sitwithlaptop from "../../assets/about/sitwithlaptop.png";
+import globalStyles from "../../globalStyles.module.css";
 
 const About = () => {
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+      <h2 className={globalStyles.title}>About</h2>
       <div className = {styles.content}>
       <img
         className={styles.aboutImage}

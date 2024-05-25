@@ -1,18 +1,33 @@
 import React from "react";
 import styles from "./Experience.module.css";
-import aboutstyles from "../About/About.module.css";
+import globalStyles from "../../globalStyles.module.css";
 import reactjs from "../../assets/experience/reactjs.png";
-import sitwithlaptop from "../../assets/about/sitwithlaptop.png";
+import html from "../../assets/experience/html.png";
+import css from "../../assets/experience/css.png";
+import js from "../../assets/experience/js.png";
+// import graphQL from "../../assets/experience/graphQL.png";
+import monogdb from "../../assets/experience/mongodb.png";
+// import node from "../../assets/experience/node.png";
+import android from "../../assets/experience/android.png";
+import kotlin from "../../assets/experience/kotlin.png";
+import Earnwealth from "../../assets/experience/Earnwealth.png";
+import sampark_infoways from "../../assets/experience/sampark_infoways.jpg";
+
+
+// import sitwithlaptop from "../../assets/about/sitwithlaptop.png";
 
 const Experience = () => {
   const skill = [
-    { title: "HTML", src: "../../assets/experience/html.png" },
-    { title: "CSS", src: "../../assets/experience/css.png" },
-    { title: "JS", src: "../../assets/experience/html.png" },
-    { title: "GraphQL", src: "../../assets/experience/graphQL.png" },
-    { title: "MongoDB", src: "../../assets/experience/mongodb.png" },
-    { title: "Node", src: "../../assets/experience/node.png" },
-    { title: "REACT JS", src: "../../assets/experience/reactjs.png" },
+    { title: "HTML", src: html },
+    { title: "CSS", src: css },
+    { title: "JS", src: js },
+    { title: "Android", src: android },
+    { title: "Kotlin", src: kotlin },
+    { title: "REACT JS", src: reactjs },
+    { title: "MongoDB", src: monogdb },
+    // { title: "Node", src: node },
+    // { title: "GraphQL", src: graphQL },
+    
   ];
 
   const history = [
@@ -22,7 +37,7 @@ const Experience = () => {
       startDate: "28-05-2023",
       endDate: "30-04-2024",
       experiences: ["React Native", "Android", "Kotlin"],
-      ImageSrc: "",
+      ImageSrc: Earnwealth,
     },
     {
       role: "React Native Developer",
@@ -30,12 +45,12 @@ const Experience = () => {
       startDate: "19-12-2022",
       endDate: "10-04-2023",
       experiences: ["React Native", "Android", "Kotlin"],
-      ImageSrc: "",
+      ImageSrc: sampark_infoways,
     },
   ];
   return (
     <section id="experience" className={styles.container}>
-      <h2 className={aboutstyles.title}>Experience</h2>
+      <h2 className={globalStyles.title}>Experience</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
           {skill.map((item, index) => {
@@ -43,7 +58,7 @@ const Experience = () => {
             return (
               <div className={styles.skill}>
                 <div className={styles.skillImageContainer}>
-                  <img src={reactjs} alt={item.title} />
+                  <img src={item.src} alt={item.title} />
                 </div>
                 <p>{item.title}</p>
               </div>
@@ -55,7 +70,7 @@ const Experience = () => {
           {history.map((item, index) => {
             return (
               <li key={index} className={styles.historyItem}>
-                <img src={sitwithlaptop} alt={`${item.organisation} logo`} />
+                <img src={item.ImageSrc} alt={`${item.organisation} logo`} />
                 <div className={styles.historyItemDetails}>
                   <h3>{`${item.role}, ${item.organisation}`}</h3>
                   <p>{`${item.startDate} - ${item.endDate}`}</p>
